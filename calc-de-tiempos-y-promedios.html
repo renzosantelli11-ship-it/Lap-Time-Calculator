@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+   
+  <head>
+       
+    <meta charset="UTF-8" />
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+    <title>calculadora de tiempos por vuelta</title>
+    <script src="calc-de-tiempos-y-promedios.js" defer></script>
+    <link rel="stylesheet" href="calc-de-tiempos-y-promedios.css" />
+  </head>
+   
+  <body>
+       
+    <main>
+           
+      <h1>calculadora de tiempos y promedios de vuelta</h1>
+      <p>
+        Pon tu tiempo y obten tu mejor, peor y promedios ¡con un solo boton!
+      </p>
+      
+      <section class="todo">
+        <div class="caja1">
+      <div class="input-de-tiempos">
+                <label for="input-tiempo">Tiempo de vuelta:</label>        
+        <input type="text" id="input-tiempo" placeholder="ej: 1:32.654" />      
+      </div>
+
+      <div class="botones">
+        <div class="btn-tiempo">
+                  <button id="btn-registrar">Registrar</button>      
+        </div>
+        <div class="btn-reset">
+          <button id="btn-resetear">Reset</button>
+        </div>
+      </div>
+
+      <div>
+               
+        <ul id="lista-tiempos">
+                 
+        </ul>
+             
+      </div>
+        </div>
+        <div class="caja2">
+             
+      <div class="resumen" id="resumen">
+                 
+        <p id="mejor-tiempo">Vuelta Rapida: --:--.---</p>
+                 
+        <p id="promedio">Promedio de vuelta: --:--.---</p>
+                 
+        <p id="peor-tiempo">Peor Vuelta: --:--.---</p>
+               
+      </div>
+        </div>
+      </section>
+         
+    </main>
+     
+  </body>
+</html>

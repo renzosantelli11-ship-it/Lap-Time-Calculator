@@ -1,0 +1,56 @@
+:root {
+    --colorPrincipal: #fff;
+    --colorSecundario: #94a3b8;
+    --bcBotones: #2563EB;
+}
+body {
+  background: linear-gradient(
+    135deg,
+    #080A0C 0%,
+    #0A0A1F 35%,
+    #0F172A 70%,
+    #1B294B 100%
+  );
+  min-height: 100vh;
+  color: var(--colorPrincipal);
+  font-family: Helvetica, sans-serif;
+}
+button {
+    background-color: var(--bcBotones);
+    border: solid #080A0C;
+    border-radius: 8px;
+    transition: 0.250s ease;
+}
+button:hover {
+    transform: scale(1.05);
+}
+button:focus {
+    transform: scale(0.95);
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transform: translateY(10px) translateX(-102px);
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.todo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.caja1, .caja2 {
+    border: 2px #fff solid;
+    border-radius: 15px;
+}
+.caja1 {
+    padding-top: 20px;
+}
+.caja2 {
+    padding-left: 20px;
+}
